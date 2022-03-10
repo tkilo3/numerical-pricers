@@ -55,3 +55,5 @@ def bsPrice(S, r, vol, T, strike, payoffType):
     else:
         raise Exception("not supported payoff type", payoffType)
         
+# then plug in variable values to price your European Option
+        
