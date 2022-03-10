@@ -6,7 +6,6 @@
 from enum import Enum
 import math
 
-
 class PayoffType(str, Enum):
     Call = 'Call'
     Put = 'Put'
