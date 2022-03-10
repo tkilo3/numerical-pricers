@@ -6,7 +6,6 @@
 from enum import Enum
 import math
 
-# to add on where required
 
 class PayoffType(str, Enum):
     Call = 'Call'
@@ -32,6 +31,8 @@ class EuropeanOption():
         else:
             raise Exception("payoffType not supported: ", self.payoffType)
 
+# to define American Option class too            
+
 ###
 # Black-Scholes Analytic Pricer
 ### 
@@ -56,4 +57,3 @@ def bsPrice(S, r, vol, T, strike, payoffType):
         raise Exception("not supported payoff type", payoffType)
         
 # then plug in variable values to price your European Option
-        
